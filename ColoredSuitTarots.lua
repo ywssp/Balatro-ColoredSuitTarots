@@ -9,7 +9,7 @@
 AltTexture({
   key = 'normal',
   set = 'Tarot',
-  path = 'Converter Tarots Normal.png',
+  path = 'Suit Tarots.png',
   display_pos = 'c_moon',
   keys = {
         'c_star',
@@ -22,7 +22,7 @@ AltTexture({
 AltTexture({
   key = 'high_contrast',
   set = 'Tarot',
-  path = 'Converter Tarots High Contrast.png',
+  path = 'Suit Tarots HC.png',
   display_pos = 'c_moon',
   keys = {
         'c_star',
