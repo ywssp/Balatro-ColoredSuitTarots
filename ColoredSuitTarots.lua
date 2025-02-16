@@ -1,36 +1,52 @@
 --- STEAMODDED HEADER
 --- MOD_NAME: Colored Suit Tarots
 --- MOD_ID: ColoredSuitTarots
+--- PREFIX: cst
 --- MOD_AUTHOR: [ywssp]
---- MOD_DESCRIPTION: Colors the suit-changing tarot cards to their respective suits.
---- PRIORITY: 1
+--- MOD_DESCRIPTION: Colors the suit-changing Tarot cards.
+--- DEPENDENCIES: [malverk]
 
-----------------------------------------------
-------------MOD CODE -------------------------
+AltTexture({
+  key = 'normal',
+  set = 'Tarot',
+  path = 'Converter Tarots Normal.png',
+  display_pos = 'c_moon',
+  keys = {
+        'c_star',
+        'c_moon',
+        'c_sun',
+        'c_world'
+  },
+})
 
-function SMODS.INIT.ColoredSuitTarots()
-    sendDebugMessage("Starting \"Colored Suit Tarots\" Mod...")
+AltTexture({
+  key = 'high_contrast',
+  set = 'Tarot',
+  path = 'Converter Tarots High Contrast.png',
+  display_pos = 'c_moon',
+  keys = {
+        'c_star',
+        'c_moon',
+        'c_sun',
+        'c_world'
+  },
+})
 
-    local color_mod = SMODS.findModByID("ColoredSuitTarots")
+TexturePack({
+  key = 'colored_tarot_normal',
+  textures = {'cst_normal'},
+  loc_txt = { 
+    name = 'Colored Suit Tarots (LC)',
+    text = {'Colors the {C:attention}suit-changing', '{C:tarot}Tarot{} cards.', 'For {C:inactive}Low Contrast{} Colors'}
+  }
+})
 
-    local isHighContrast = G.SETTINGS.colourblind_option
+TexturePack({
+  key = 'colored_tarot_hc',
+  textures = {'cst_high_contrast'},
 
-    local normalFilePath = 'Tarots.png'
-    local highContrastFilePath = 'Tarots_HighContrast.png'
-
-    local filePath = ''
-
-    if (isHighContrast) then
-        sendDebugMessage("High Contrast Setting Turned On, Using file: " .. highContrastFilePath)
-        filePath = highContrastFilePath
-    else
-        sendDebugMessage("High Contrast Setting Turned Off, Using file: " .. normalFilePath)
-        filePath = normalFilePath
-    end
-
-    local sprite_tarot = SMODS.Sprite:new('Tarot', color_mod.path, filePath, 71, 95, 'asset_atli')
-
-    sprite_tarot:register()
-end
-----------------------------------------------
-------------MOD CODE END----------------------
+  loc_txt = { 
+    name = 'Colored Suit Tarots (HC)',
+    text = {'Colors the {C:attention}suit-changing', '{C:tarot}Tarot{} cards.', 'For {C:blue}High Contrast{} Colors'}
+  }
+})

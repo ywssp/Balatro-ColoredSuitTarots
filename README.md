@@ -1,16 +1,17 @@
-# Balatro-ColoredSuitTarots
+# Colored Suit Tarots
 
-Texture pack for Balatro that colors the suit-changing tarot cards to their respective suits.
+Texture pack for Balatro that colors the suit-changing Tarot cards to their respective suits.
 
-Both Normal and High Contrast versions are available and is automatically selected based on your settings.
+Both Normal and High Contrast versions are available.
 
-Reload your game after changing your settings to apply the other color scheme.
+## Dependencies
+- [Steamodded](https://github.com/Steamopollys/Steamodded?tab=readme-ov-file#installation)
+- [Malverk](https://github.com/Eremel/Malverk)
 
 ## Installation
-- Install [Steamodded](https://github.com/Steamopollys/Steamodded?tab=readme-ov-file#installation)
 - Go to `%AppData%\Balatro\Mods`
 - Extract the zip file into the folder
 
-![Normal Version](https://raw.githubusercontent.com/ywssp/Balatro-ColoredSuitTarots/main/dev/Converter%20Tarots%20Normal.png)
-![High Contrast Version](https://raw.githubusercontent.com/ywssp/Balatro-ColoredSuitTarots/main/dev/Converter%20Tarots%20High%20Contrast.png)
+![Normal Version](https://raw.githubusercontent.com/ywssp/Balatro-ColoredSuitTarots/main/dev/Suit%20Tarots.png)
+![High Contrast Version](https://raw.githubusercontent.com/ywssp/Balatro-ColoredSuitTarots/main/dev/Suit%20Tarots%20HC.png)
 
