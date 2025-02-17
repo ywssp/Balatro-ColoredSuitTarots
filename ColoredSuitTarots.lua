@@ -10,12 +10,11 @@ AltTexture({
   key = 'normal',
   set = 'Tarot',
   path = 'Suit Tarots.png',
-  display_pos = 'c_moon',
   keys = {
-        'c_star',
         'c_moon',
-        'c_sun',
-        'c_world'
+        'c_world',
+        'c_star',
+        'c_sun'
   },
 })
 
@@ -23,12 +22,11 @@ AltTexture({
   key = 'high_contrast',
   set = 'Tarot',
   path = 'Suit Tarots HC.png',
-  display_pos = 'c_moon',
   keys = {
-        'c_star',
         'c_moon',
-        'c_sun',
-        'c_world'
+        'c_world',
+        'c_star',
+        'c_sun'
   },
 })
 
