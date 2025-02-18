@@ -11,8 +11,6 @@ Texture pack for Balatro that colors the suit-changing Tarot cards to their resp
 - Base (Green Clubs, Blue Spades, Purple Diamonds)
 - Orange Clubs
 
-Both Normal and High Contrast versions are available.
-
 ## Dependencies
 - [Steamodded](https://github.com/Steamopollys/Steamodded?tab=readme-ov-file#installation)
 - [Malverk](https://github.com/Eremel/Malverk)
