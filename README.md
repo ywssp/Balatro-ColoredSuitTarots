@@ -18,7 +18,4 @@ Texture pack for Balatro that colors the suit-changing Tarot cards to their resp
 - Base Game (Low Contrast, High Contrast)
 - [Gradient Suit Colors](https://discord.com/channels/1116389027176787968/1221853064475050064) (Green, Orange)
 
-![Normal Version](https://raw.githubusercontent.com/ywssp/Balatro-ColoredSuitTarots/main/dev/Suit%20Tarots.png)
-![High Contrast Version](https://raw.githubusercontent.com/ywssp/Balatro-ColoredSuitTarots/main/dev/Suit%20Tarots%20HC.png)
-![Gradient Version](https://raw.githubusercontent.com/ywssp/Balatro-ColoredSuitTarots/main/dev/Suit%20Tarots%20Gradient.png)
 
