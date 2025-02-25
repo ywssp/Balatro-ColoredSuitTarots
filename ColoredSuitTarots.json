@@ -1,0 +1,16 @@
+{
+  "id": "ColoredSuitTarots",
+  "name": "Colored Suit Tarots",
+  "author": [
+    "ywssp"
+  ],
+  "description": "Colors the suit-changing Tarot cards. Has Colored and Gradient Variants. Requires Malverk.",
+  "prefix": "cst",
+  "main_file": "ColoredSuitTarots.lua",
+  "badge_colour": "007bc5",
+  "badge_text_colour": "00395c",
+  "version": "4.1.1",
+  "dependencies": [
+    "malverk (>=1.1.3)"
+  ]
+}
