@@ -1,36 +1,45 @@
 -- Colored - Base
 AltTexture({
-    key = 'normal',
+    key = 'c_base_low',
     set = 'Tarot',
-    path = 'Suit Tarots.png',
+    path = 'Color/Base/Low Contrast.png',
     display_pos = {x = 4, y = 0},
     keys = {'c_star', 'c_moon', 'c_sun', 'c_world'},
     loc_txt = {name = 'Base Textures (Low Contrast)'}
 })
 
 AltTexture({
-    key = 'high_contrast',
+    key = 'c_base_high',
     set = 'Tarot',
-    path = 'Suit Tarots HC.png',
+    path = 'Color/Base/High Contrast.png',
     display_pos = {x = 4, y = 0},
     keys = {'c_star', 'c_moon', 'c_sun', 'c_world'},
     loc_txt = {name = 'High Contrast'}
 })
 
+-- Colored - Modded
+AltTexture({
+    key = 'c_mod_ink',
+    set = 'Tarot',
+    path = 'Color/Modded/Ink and Color.png',
+    keys = {'c_ink_the_paint', 'c_ink_the_blob'},
+    loc_txt = {name = 'Ink and Color Compatibility'}
+})
+
 -- Gradient - Base
 AltTexture({
-    key = 'gradient_lc',
+    key = 'g_base_low',
     set = 'Tarot',
-    path = 'Suit Tarots Grad_LC.png',
+    path = 'Gradient/Base/Low Contrast.png',
     display_pos = {x = 4, y = 0},
     keys = {'c_star', 'c_moon', 'c_sun', 'c_world'},
     loc_txt = {name = 'Base Colors (Low Contrast)'}
 })
 
 AltTexture({
-    key = 'gradient_hc',
+    key = 'g_base_high',
     set = 'Tarot',
-    path = 'Suit Tarots Grad_HC.png',
+    path = 'Gradient/Base/High Contrast.png',
     display_pos = {x = 4, y = 0},
     keys = {'c_star', 'c_moon', 'c_sun', 'c_world'},
     loc_txt = {name = 'Base Colors (High Contrast)'}
@@ -38,28 +47,37 @@ AltTexture({
 
 -- Gradient - Gradient Suit Colors
 AltTexture({
-    key = 'gradient_green',
+    key = 'g_alt_gsc_green',
     set = 'Tarot',
-    path = 'Suit Tarots GSC_G.png',
+    path = 'Gradient/Alt Colors/GSC Green.png',
     display_pos = {x = 4, y = 0},
     keys = {'c_star', 'c_moon', 'c_sun', 'c_world'},
     loc_txt = {name = 'Gradient Suit Colors (Green Clubs)'}
 })
 
 AltTexture({
-    key = 'gradient_orange',
+    key = 'g_alt_gsc_orange',
     set = 'Tarot',
-    path = 'Suit Tarots GSC_O.png',
+    path = 'Gradient/Alt Colors/GSC Orange.png',
     display_pos = {x = 4, y = 0},
     keys = {'c_star', 'c_moon', 'c_sun', 'c_world'},
     loc_txt = {name = 'Gradient Suit Colors (Orange Clubs)'}
 })
 
+-- Gradient - Modded
+AltTexture({
+    key = 'g_mod_ink',
+    set = 'Tarot',
+    path = 'Gradient/Modded/Ink and Color.png',
+    keys = {'c_ink_the_paint', 'c_ink_the_blob'},
+    loc_txt = {name = 'Ink and Color Compatibility'}
+})
+
 -- Texture Packs
 TexturePack({
-    key = 'colored_tarot_base',
-    textures = {'cst_normal', 'cst_high_contrast'},
-    toggle_textures = {'cst_high_contrast'},
+    key = 'cst_colored',
+    textures = {'cst_c_base_low', 'cst_c_base_high', 'cst_c_mod_ink'},
+    toggle_textures = {'cst_c_base_high'},
     dynamic_display = true,
     loc_txt = {
         name = 'Colored Suit Tarots',
@@ -71,13 +89,13 @@ TexturePack({
 })
 
 TexturePack({
-    key = 'colored_tarot_gradient',
+    key = 'cst_gradient',
     textures = {
-        'cst_gradient_lc', 'cst_gradient_hc', 'cst_gradient_green',
-        'cst_gradient_orange'
+        'cst_g_base_low', 'cst_g_base_high', 'cst_g_alt_gsc_green',
+        'cst_g_alt_gsc_orange', 'cst_g_mod_ink'
     },
     toggle_textures = {
-        'cst_gradient_hc', 'cst_gradient_green', 'cst_gradient_orange'
+        'cst_g_base_high', 'cst_g_alt_gsc_green', 'cst_g_alt_gsc_orange'
     },
     dynamic_display = true,
     loc_txt = {
